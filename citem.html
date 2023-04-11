@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="citem.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" 
+        rel="stylesheet"> 
+    <title>Cadastro de títulos</title>
+</head>
+<body>
+    <title>Cadastro Profissional</title>
+    <link rel="stylesheet" type="text/css" href="cadastro.html">
+        <div class="container">
+            <header>
+                <img src="img/logo.png">
+            </header>
+            <h1>Cadastro de Títulos</h1>
+            <main>
+                <form action="http://127.0.0.1:5500/catalogo.html">
+                    <div>
+                        <label for="nome">Título:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div>
+                        <label for="icategoria">Categoria:</label>
+                        <div>
+                            <select name="categoria" id="categoria">
+            
+                                <option value="A">Ação</option>
+            
+                                <option value="C">Comédia</option>
+                                <option value=”D”>Drama</option>
+            
+                                <option value=”T”>Terror</option>
+            
+                                <option value=”I”>Infantil</option>
+            
+            
+            
+                            </select>
+                        </div>
+                        <br>
+                    </div>
+                    <div>
+                        <label for="idescricao">Descrição:</label>
+                    </div>
+                    <div>
+                        <textarea name="textdescricao" id="idescricao" cols="30" rows="10"></textarea> 
+                </div>
+              
+                <nav>
+                    <div>
+                    <input type="submit" value="Cadastrar">
+                    </div>
+                </nav>
+            </form>
+        </main>
+        </div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    background-color: #f7cccc;
+}
+
+.container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: #cf3633;
+	border: 1px solid #f7cccc;
+	border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto; 
+    grid-template-areas:  
+    "h" 
+    "f" 
+    "r"; 
+}
+
+header{ 
+	grid-area: h;
+    color: rgb(219, 190, 190);
+    font-size: 3.5rem;
+    background-color: #861312;
+    font-family: 'Amaranth', sans-serif;
+    padding: 20px;
+}
+
+header > img{
+	width: 300px;
+	
+}
+
+h1 {
+    font-family: 'Amaranth', sans-serif;
+	text-align: center;
+	margin-bottom: 30px;
+    color: #f7cccc;
+}
+
+form{
+	display: flex;
+	flex-direction: column;
+    justify-content: center;
+    margin-left: 100px;
+    font-family: 'Amaranth', sans-serif;
+    color: #f7cccc;
+}
+
+label {
+	margin-bottom: 10px;
+	font-weight: bold;
+    font-family: 'Amaranth', sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"] {
+	margin-bottom: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+    font-family: 'Amaranth', sans-serif;
+}
+
+input[type="submit"] {
+	background-color: #861312;
+	color: #f7cccc;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+    font-family: 'Amaranth', sans-serif;
+}
+
+input[type="submit"]:hover {
+	background-color: #dd5351;
+}
