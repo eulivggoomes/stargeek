@@ -19,26 +19,27 @@
             <img src="img/logo.png">
         </header>
         <div id="login">
-            <form class="card">
+            <form class="card" id="formulario">
                 <div class="card-header">
                     <h1>Login</h1>
+                    <div class="mensagem"></div>
                 </div>
                 <div class="card-content">
                     <div class="card-content-area">
-                        <label for="usuario">Usuário:</label>
+                        <label for="usuario">E-mail:</label>
                         <input type="text" id="usuario" autocomplete="off">
                     </div>
                     <div class="card-content-area">
                         <label for="password">Senha:</label>
                         <input type="password" id="password" autocomplete="off">
                         <div>
-                            <input type="checkbox">
-                            <label for="">Lembre-se de mim</label>
+                            <input type="checkbox" id="lembrar">
+                            <label for="lembrar">Lembre-se de mim</label>
                         </div>
                     </div>
                 </div>
                 <div class="card-footer">
-                    <a href="catalogo.html" class="btn-01">Entrar</a>
+                    <button class="btn-01">Entrar</button>
                     <a href="#" class="recuperar_senha">Esqueceu a senha?</a>
                 </div>
             </form>
@@ -46,6 +47,7 @@
         <footer>
         </footer>
     </div>
+    <script src="login.js"></script>
 </body>
 
 </html>
