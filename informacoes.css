@@ -1,0 +1,25 @@
+Cores{
+    background-color: #861312;
+    background-color: #f7cccc;
+    background-color: #d29b9b;
+    background-color: #fff;
+    background-color: #dd5351;
+    background-color: black;
+}
+
+Organização{
+    display: grid;
+    display: flex;
+}
+
+Seletores:
+-Class;
+-Tag(input);
+
+Imagens:
+-Logo Star Geek(PNG);
+-Título de informações;
+
+Fonte{
+    font-family:'Amaranth', sans-serif;
+}

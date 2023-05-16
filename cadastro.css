@@ -65,7 +65,7 @@ input[type="password"] {
     font-family: 'Amaranth', sans-serif;
 }
 
-input[type="submit"] {
+button {
 	background-color: #861312;
 	color: #f7cccc;
 	padding: 10px;
@@ -75,6 +75,10 @@ input[type="submit"] {
     font-family: 'Amaranth', sans-serif;
 }
 
-input[type="submit"]:hover {
+button:hover {
 	background-color: #dd5351;
+}
+
+.mensagem{
+	font-family:'Amaranth', sans-serif;
 }

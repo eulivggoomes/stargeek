@@ -6,14 +6,14 @@
 }
 
 .container {
+    display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 5vh;
+    grid-template-rows: auto 650px auto;
     grid-template-areas:
         "h"
         "m"
         "f";
-   background-color: #f7cccc;
-   height: 800px;
+   
 }
 header{
     grid-area: h;
@@ -23,11 +23,11 @@ header{
     color: #d29b9b;
     justify-content: space-between;
     align-items: center;
-    height: 300px;
+    height: 30px;
 }
 
 header > img{
-    width: 300px;
+    width: 200px;
 }
 
  h1{
@@ -38,10 +38,16 @@ header > img{
  main{
     grid-area: m;
     display: flex;
-    padding: 32px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: #f7cccc;
+}
+
+footer{
+    grid-area: f;
+    background-color: #861312;
+    height: 55px;
 }
 
 .cards{
@@ -60,7 +66,7 @@ header > img{
     justify-content: center;
     flex-direction: column;
     background-color: #861312;
-  width: 300px;
+     width: 300px;
 }
 
 .btn-01{
@@ -83,7 +89,13 @@ button{
     height: 100px;
 }
 
-footer{
-    background-color: #861312;
-    
+
+@media (max-width:400px){
+    .card{
+    height: 150px;
+    }
+    .icon > img{
+        height: 50px;
+    }
 }
+
