@@ -10,6 +10,7 @@ formulario.onsubmit = (evento) => {
     if (elemento.email === email.value && elemento.senha ==senha.value){
         evento.preventDefault();
         mensagem.innerHTML="Logado";
+        sessionStorage.setItem("email", email.value);
         setTimeout(()=>{
             window.location.assign("catalogo.html");
         }, 3000);

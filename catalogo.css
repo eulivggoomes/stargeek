@@ -8,12 +8,19 @@
 .container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto 650px auto;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "h"
         "m"
         "f";
-   
+
+        
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    margin: 10px;
 }
 header{
     grid-area: h;
@@ -34,7 +41,66 @@ header > img{
     display: flex;
     flex-direction: column;
 }
-
+.cadmodal {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    color: #861312;
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7cccc;
+    border-radius: 10px;
+    width: 50%;
+  }
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.card{
+    width: 300px;
+}
+.cardimagem img{
+    width: 250px;
+    height: 200px;
+}
+.cards img:hover{
+    opacity: 0.7;
+}
+.cardinfo {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    justify-content: space-around;
+}
+.cardnome {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #861312;
+    text-align: center;
+    margin-top: -5px;
+    padding: 20px;
+    width: 250px;
+}
+.cardnome p{
+    font-size: 1rem;
+    font-weight: normal;
+  }
  main{
     grid-area: m;
     display: flex;
@@ -42,39 +108,13 @@ header > img{
     align-items: center;
     flex-direction: column;
     background-color: #f7cccc;
+    min-height: 90vh;
 }
 
 footer{
     grid-area: f;
     background-color: #861312;
     height: 55px;
-}
-
-.cards{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
-    flex-wrap: wrap;
-    row-gap: 20px;
-
-}
-
-.card{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #861312;
-     width: 300px;
-}
-
-.btn-01{
-    padding: 10px 20px;
-    background-color: #861312;
-    margin-top: 20px;
-    color: #f7cccc;
-    text-decoration: none;
 }
 
 
@@ -85,17 +125,21 @@ button{
     border-color: #d29b9b;
 }
 
-.icon > img{
-    height: 100px;
-}
+.btn{
+    display:block;
+  }
+  
+.btneditar{
+    display: block;
+  }
 
 
-@media (max-width:400px){
-    .card{
-    height: 150px;
-    }
-    .icon > img{
-        height: 50px;
-    }
-}
-
+  @media (max-width: 600px)
+  {
+   .modal{
+    width: 300px;
+   }
+   .cadmodal{
+    width:100vw;
+   }
+  }
