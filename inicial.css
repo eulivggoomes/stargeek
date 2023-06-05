@@ -1,187 +1,85 @@
 *{ 
-
     margin: 0; 
-
     padding: 0; 
-
     box-sizing: border-box; 
-
 } 
-
- 
- 
-
 body { 
-
 font-family: 'Amaranth', sans-serif; 
-
 } 
-
- 
- 
-
 .container{ 
-
     display: grid; 
-
     grid-template-columns: 1fr; 
-
     grid-template-rows: auto auto 80px; 
-
     grid-template-areas:  
-
     "c" 
-
     "p" 
-
     "f"; 
-
 } 
-
- 
- 
- 
-
 header{ 
-
     grid-area: c; 
-
     background-color:#861312; 
-
     color: rgb(219, 190, 190); 
-
     padding: 20px; 
-
 } 
-
- 
- 
-
 nav { 
-
     grid-area: m; 
-
 } 
-
-     
-
     main { 
-
         grid-area: p; 
- 
-
         height: 600px; 
-
         background-repeat: no-repeat; 
-
         background-size: 100%; 
-
         display: flex; 
-
         flex-direction: column; 
-
         justify-content: center; 
-
         align-items: center; 
-
         row-gap: 20px;
         background-color: #cb2a27;
-
-        
-
     } 
-
-
-
     main > p { 
-
     font-size: 2rem; 
-
     text-align: center; 
-
     color: rgb(219, 190, 190); 
-
     text-shadow: black; 
-
     } 
-
     header > img { 
-
         height: 50px; 
-
     }     
-
- 
- 
- 
-
 main > span{ 
-
     font-size: 1.3rem; 
-
     color: rgb(219, 190, 190); 
-
     text-shadow: black; 
-
 } 
-
- 
- 
-
 main > small{ 
-
     font-size: 0.7rem; 
-
     color: rgb(219, 190, 190); 
-
     text-shadow: black; 
-
 } 
-
- 
- 
-
 section{ 
-
     display: flex; 
-
 }footer { 
-
     grid-area: f; 
-
-    background-color: #861312; 
-
-    ; 
-
+    background-color: #861312;  
 } 
-
- 
- 
-
 nav > form > input { 
-
     font-family: 'Amaranth', sans-serif; 
-
     text-decoration: none; 
-
     display: flex; 
-
     justify-content: center; 
-
     align-items: center; 
-
     color: rgb(219, 190, 190); 
-
     background: #861312; 
-
     width: 201px; 
-
     height: 46px; 
-
     font-size: 1.3rem; 
-
 } 
-
- 
-
- 
+header > form > input{
+    background-color: #cb2a27;
+    font-family: 'Amaranth', sans-serif; 
+    justify-content: center; 
+    align-items: center; 
+    color: rgb(219, 190, 190);
+    font-size: 1.1rem;
+    width: 70px;
+    height: 30px;
+}
